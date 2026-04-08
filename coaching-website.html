@@ -1,0 +1,1991 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <meta name="description"
+    content="Litmus Academy Nashik — Top coaching for SSC, ICSE, CBSE, JEE & NEET. Multiple branches, experienced faculty, proven results. Book a free demo class today." />
+  <title>Litmus Academy Nashik — SSC, ICSE, CBSE, JEE & NEET Coaching | Book Free Demo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <style>
+    :root {
+      --navy: #0c1f3f;
+      --navy-l: #152d54;
+      --navy-d: #081428;
+      --teal: #1a8f7d;
+      --teal-l: #22b89e;
+      --teal-bg: rgba(26, 143, 125, .07);
+      --gold: #d4a035;
+      --gold-bg: rgba(212, 160, 53, .08);
+      --bg: #f4f6fa;
+      --surface: #fff;
+      --text: #0f172a;
+      --muted: #5a6578;
+      --line: #dce2ed;
+      --green-wa: #25d366;
+      --shadow: 0 12px 36px rgba(12, 31, 63, .07);
+      --shadow-md: 0 6px 20px rgba(12, 31, 63, .05);
+      --r: 18px;
+      --r-sm: 14px;
+      --max: 1160px;
+      --t: .22s ease
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0
+    }
+
+    html {
+      scroll-behavior: smooth
+    }
+
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none
+    }
+
+    img {
+      max-width: 100%;
+      display: block
+    }
+
+    ul {
+      list-style: none
+    }
+
+    button,
+    input,
+    textarea,
+    select {
+      font: inherit
+    }
+
+    .w {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 0 20px
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      padding: 13px 22px;
+      border-radius: 60px;
+      border: none;
+      font-weight: 700;
+      font-size: .9rem;
+      cursor: pointer;
+      transition: transform var(--t), box-shadow var(--t);
+      white-space: nowrap
+    }
+
+    .btn:hover {
+      transform: translateY(-2px)
+    }
+
+    .btn-p {
+      background: var(--teal);
+      color: #fff;
+      box-shadow: 0 10px 24px rgba(26, 143, 125, .22)
+    }
+
+    .btn-p:hover {
+      background: var(--teal-l)
+    }
+
+    .btn-wa {
+      background: var(--green-wa);
+      color: #fff;
+      box-shadow: 0 10px 24px rgba(37, 211, 102, .2)
+    }
+
+    .btn-wa:hover {
+      background: #1fb855
+    }
+
+    .btn-o {
+      background: #fff;
+      color: var(--navy);
+      border: 1.5px solid var(--line);
+      box-shadow: var(--shadow-md)
+    }
+
+    .btn-o:hover {
+      border-color: var(--navy)
+    }
+
+    .btn-n {
+      background: var(--navy);
+      color: #fff;
+      box-shadow: 0 10px 24px rgba(12, 31, 63, .18)
+    }
+
+    .kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--teal);
+      font-weight: 800;
+      font-size: .8rem;
+      text-transform: uppercase;
+      letter-spacing: .1em;
+      margin-bottom: 10px
+    }
+
+    .kicker::before {
+      content: '';
+      width: 20px;
+      height: 2px;
+      background: var(--teal);
+      border-radius: 2px
+    }
+
+    /* NAV */
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 90;
+      background: rgba(255, 255, 255, .82);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(220, 226, 237, .6);
+      transition: var(--t)
+    }
+
+    .topbar.scrolled {
+      box-shadow: 0 2px 20px rgba(0, 0, 0, .06)
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px 0;
+      gap: 14px
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 900;
+      font-size: 1.1rem;
+      color: var(--navy);
+      letter-spacing: -.02em
+    }
+
+    .logo-mark {
+      width: 40px;
+      height: 40px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, var(--navy), var(--teal));
+      display: grid;
+      place-items: center;
+      color: #fff;
+      font-size: .85rem;
+      font-weight: 900;
+      flex: none
+    }
+
+    .nav-mid {
+      display: flex;
+      gap: 22px;
+      font-size: .88rem;
+      font-weight: 600;
+      color: var(--muted)
+    }
+
+    .nav-mid a:hover {
+      color: var(--navy)
+    }
+
+    .nav-r {
+      display: flex;
+      gap: 8px;
+      align-items: center
+    }
+
+    .mob-btn {
+      display: none;
+      background: none;
+      border: 1.5px solid var(--line);
+      border-radius: 10px;
+      padding: 8px 14px;
+      font-weight: 700;
+      font-size: .85rem;
+      cursor: pointer
+    }
+
+    .mob-menu {
+      display: none;
+      padding: 0 0 14px
+    }
+
+    .mob-menu.on {
+      display: block
+    }
+
+    .mob-menu a {
+      display: block;
+      padding: 10px 0;
+      border-top: 1px solid var(--line);
+      font-weight: 600;
+      color: var(--muted);
+      font-size: .92rem
+    }
+
+    /* HERO */
+    .hero {
+      padding: 48px 0 32px;
+      position: relative
+    }
+
+    .hero-g {
+      display: grid;
+      grid-template-columns: 1.15fr .85fr;
+      gap: 28px;
+      align-items: stretch
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      gap: 8px;
+      align-items: center;
+      padding: 7px 14px;
+      border-radius: 60px;
+      background: rgba(26, 143, 125, .1);
+      color: #0e6b5c;
+      font-weight: 700;
+      font-size: .82rem;
+      margin-bottom: 18px;
+      border: 1px solid rgba(26, 143, 125, .15)
+    }
+
+    .hero-badge .dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--teal);
+      animation: pulse 2s infinite
+    }
+
+    @keyframes pulse {
+
+      0%,
+      100% {
+        opacity: 1
+      }
+
+      50% {
+        opacity: .3
+      }
+    }
+
+    .hero h2 {
+      font-size: clamp(2.1rem, 4.5vw, 3.8rem);
+      line-height: .97;
+      letter-spacing: -.04em;
+      font-weight: 900;
+      max-width: 15ch;
+      margin-bottom: 16px
+    }
+
+    .hero h2 em {
+      font-style: normal;
+      color: var(--teal)
+    }
+
+    .hero .lead {
+      color: var(--muted);
+      font-size: 1.02rem;
+      max-width: 52ch;
+      line-height: 1.65;
+      margin-bottom: 24px
+    }
+
+    .hero-btns {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 28px
+    }
+
+    .hero-proof {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      padding: 18px 0;
+      border-top: 1px solid var(--line)
+    }
+
+    .proof-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: .86rem;
+      font-weight: 600;
+      color: var(--muted)
+    }
+
+    .proof-item strong {
+      color: var(--navy);
+      font-size: 1.1rem
+    }
+
+    .hero-card {
+      background: linear-gradient(160deg, rgba(255, 255, 255, .97), rgba(248, 250, 254, .9));
+      border: 1px solid rgba(220, 226, 237, .85);
+      border-radius: var(--r);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      position: relative
+    }
+
+    .hero-card::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at 90% 10%, rgba(26, 143, 125, .08), transparent 40%), radial-gradient(circle at 10% 90%, rgba(212, 160, 53, .06), transparent 40%);
+      pointer-events: none
+    }
+
+    .hc-inner {
+      position: relative;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      height: 100%;
+      justify-content: space-between
+    }
+
+    .hc-box {
+      background: #fff;
+      border: 1px solid rgba(220, 226, 237, .9);
+      border-radius: var(--r-sm);
+      padding: 16px;
+      box-shadow: 0 6px 18px rgba(12, 31, 63, .04)
+    }
+
+    .hc-box h4 {
+      font-size: 1rem;
+      margin-bottom: 6px
+    }
+
+    .hc-box p {
+      color: var(--muted);
+      font-size: .88rem;
+      margin: 0;
+      line-height: 1.5
+    }
+
+    .hc-stats {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 10px
+    }
+
+    .hc-stat {
+      text-align: center;
+      background: #fff;
+      border: 1px solid rgba(220, 226, 237, .9);
+      border-radius: var(--r-sm);
+      padding: 14px 8px
+    }
+
+    .hc-stat strong {
+      display: block;
+      font-size: 1.25rem;
+      color: var(--navy)
+    }
+
+    .hc-stat span {
+      color: var(--muted);
+      font-size: .78rem
+    }
+
+    /* STAT BAND */
+    .stat-band {
+      background: var(--navy);
+      border-radius: var(--r);
+      padding: 28px 32px;
+      margin-top: -20px;
+      position: relative;
+      z-index: 5;
+      box-shadow: var(--shadow)
+    }
+
+    .stat-band-g {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 16px;
+      text-align: center;
+      color: #fff
+    }
+
+    .sb-item strong {
+      display: block;
+      font-size: 1.6rem;
+      font-weight: 900;
+      line-height: 1
+    }
+
+    .sb-item span {
+      font-size: .78rem;
+      color: rgba(255, 255, 255, .6);
+      margin-top: 4px;
+      display: block
+    }
+
+    /* SECTIONS */
+    .sec {
+      padding: 48px 0
+    }
+
+    .sec-head {
+      margin-bottom: 28px;
+      max-width: 620px
+    }
+
+    .sec-head h3 {
+      font-size: clamp(1.5rem, 2.5vw, 2rem);
+      font-weight: 800;
+      letter-spacing: -.03em;
+      line-height: 1.15;
+      margin-bottom: 8px
+    }
+
+    .sec-head p {
+      color: var(--muted);
+      font-size: .95rem
+    }
+
+    /* TRACKS */
+    .tracks-g {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px
+    }
+
+    .track-card {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: var(--r);
+      padding: 24px;
+      box-shadow: var(--shadow-md);
+      transition: var(--t);
+      position: relative;
+      overflow: hidden
+    }
+
+    .track-card:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--shadow)
+    }
+
+    .track-card::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px
+    }
+
+    .track-card.school::after {
+      background: linear-gradient(90deg, var(--navy), var(--navy-l))
+    }
+
+    .track-card.jee::after {
+      background: linear-gradient(90deg, var(--teal), var(--teal-l))
+    }
+
+    .track-card.neet::after {
+      background: linear-gradient(90deg, var(--gold), #e8b84a)
+    }
+
+    .track-card.commerce::after {
+      background: linear-gradient(90deg, #6366f1, #818cf8)
+    }
+
+    .track-tag {
+      display: inline-flex;
+      padding: 5px 10px;
+      border-radius: 60px;
+      font-size: .75rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: .06em;
+      margin-bottom: 14px
+    }
+
+    .track-card.school .track-tag {
+      background: rgba(12, 31, 63, .08);
+      color: var(--navy)
+    }
+
+    .track-card.jee .track-tag {
+      background: var(--teal-bg);
+      color: var(--teal)
+    }
+
+    .track-card.neet .track-tag {
+      background: var(--gold-bg);
+      color: var(--gold)
+    }
+
+    .track-card.commerce .track-tag {
+      background: rgba(99, 102, 241, .08);
+      color: #6366f1
+    }
+
+    /* ADMISSIONS PROCESS */
+    .process-g {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0;
+      position: relative
+    }
+
+    .process-g::before {
+      content: '';
+      position: absolute;
+      top: 32px;
+      left: 10%;
+      right: 10%;
+      height: 2px;
+      background: linear-gradient(90deg, var(--teal), var(--navy));
+      opacity: .15;
+      z-index: 0
+    }
+
+    .step {
+      text-align: center;
+      position: relative;
+      z-index: 1;
+      padding: 0 14px
+    }
+
+    .step-num {
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      font-size: 1.1rem;
+      font-weight: 900;
+      margin: 0 auto 14px;
+      border: 2px solid var(--line);
+      background: #fff;
+      color: var(--navy);
+      box-shadow: var(--shadow-md);
+      transition: var(--t)
+    }
+
+    .step:hover .step-num {
+      background: var(--teal);
+      color: #fff;
+      border-color: var(--teal);
+      transform: scale(1.08)
+    }
+
+    .step h4 {
+      font-size: .92rem;
+      margin-bottom: 4px
+    }
+
+    .step p {
+      color: var(--muted);
+      font-size: .82rem;
+      line-height: 1.5
+    }
+
+    .track-card h4 {
+      font-size: 1.12rem;
+      margin-bottom: 8px
+    }
+
+    .track-card>p {
+      color: var(--muted);
+      font-size: .88rem;
+      margin-bottom: 16px;
+      line-height: 1.55
+    }
+
+    .track-card ul {
+      padding-left: 16px;
+      list-style: disc;
+      color: var(--muted);
+      font-size: .86rem;
+      margin-bottom: 18px
+    }
+
+    .track-card li {
+      margin: 6px 0
+    }
+
+    /* WHY */
+    .why-g {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px
+    }
+
+    .why-card {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: var(--r);
+      padding: 22px;
+      box-shadow: var(--shadow-md);
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+      transition: var(--t)
+    }
+
+    .why-card:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow)
+    }
+
+    .why-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      background: var(--teal-bg);
+      color: var(--teal);
+      display: grid;
+      place-items: center;
+      flex: none;
+      font-size: 1.2rem
+    }
+
+    .why-card h4 {
+      font-size: .98rem;
+      margin-bottom: 4px
+    }
+
+    .why-card p {
+      color: var(--muted);
+      font-size: .86rem;
+      line-height: 1.55;
+      margin: 0
+    }
+
+    /* TOPPERS */
+    .topper-g {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px
+    }
+
+    .topper {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: var(--r);
+      overflow: hidden;
+      box-shadow: var(--shadow-md);
+      transition: var(--t)
+    }
+
+    .topper:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--shadow)
+    }
+
+    .topper-img {
+      height: 160px;
+      background: linear-gradient(135deg, rgba(12, 31, 63, .06), rgba(26, 143, 125, .06));
+      display: grid;
+      place-items: center;
+      border-bottom: 1px solid var(--line)
+    }
+
+    .topper-img svg {
+      width: 64px;
+      height: 64px;
+      color: rgba(12, 31, 63, .35)
+    }
+
+    .topper-body {
+      padding: 16px
+    }
+
+    .topper-body h4 {
+      font-size: .95rem;
+      margin-bottom: 4px
+    }
+
+    .topper-body .stream {
+      color: var(--muted);
+      font-size: .8rem;
+      margin-bottom: 10px
+    }
+
+    .topper-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px
+    }
+
+    .topper-tags span {
+      padding: 4px 10px;
+      border-radius: 60px;
+      font-size: .75rem;
+      font-weight: 700;
+      background: var(--teal-bg);
+      color: var(--teal)
+    }
+
+    .topper-tags .gold {
+      background: var(--gold-bg);
+      color: var(--gold)
+    }
+
+    /* FACULTY */
+    .fac-g {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px
+    }
+
+    .fac-card {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: var(--r);
+      padding: 24px;
+      box-shadow: var(--shadow-md);
+      text-align: center;
+      transition: var(--t)
+    }
+
+    .fac-card:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow)
+    }
+
+    .fac-avatar {
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--navy), var(--teal));
+      color: #fff;
+      display: grid;
+      place-items: center;
+      font-size: 1.2rem;
+      font-weight: 800;
+      margin: 0 auto 14px
+    }
+
+    .fac-card h4 {
+      font-size: 1rem;
+      margin-bottom: 2px
+    }
+
+    .fac-card .subj {
+      color: var(--teal);
+      font-size: .82rem;
+      font-weight: 700;
+      margin-bottom: 10px
+    }
+
+    .fac-card p {
+      color: var(--muted);
+      font-size: .86rem;
+      line-height: 1.55;
+      margin: 0
+    }
+
+    .fac-card .exp {
+      margin-top: 12px;
+      display: inline-flex;
+      padding: 5px 12px;
+      border-radius: 60px;
+      background: rgba(12, 31, 63, .06);
+      color: var(--navy);
+      font-size: .78rem;
+      font-weight: 700
+    }
+
+    /* BRANCHES */
+    .branch-g {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px
+    }
+
+    .branch {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: var(--r);
+      padding: 22px;
+      box-shadow: var(--shadow-md);
+      position: relative;
+      transition: var(--t)
+    }
+
+    .branch:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow)
+    }
+
+    .branch h4 {
+      font-size: 1rem;
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 8px
+    }
+
+    .branch h4::before {
+      content: '📍';
+      font-size: .9rem
+    }
+
+    .branch p {
+      color: var(--muted);
+      font-size: .86rem;
+      line-height: 1.5;
+      margin-bottom: 14px
+    }
+
+    /* TESTIMONIALS */
+    .testi-g {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px
+    }
+
+    .testi {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: var(--r);
+      padding: 22px;
+      box-shadow: var(--shadow-md)
+    }
+
+    .testi .stars {
+      color: var(--gold);
+      font-size: .82rem;
+      letter-spacing: 2px;
+      margin-bottom: 10px
+    }
+
+    .testi blockquote {
+      font-size: .9rem;
+      color: var(--muted);
+      line-height: 1.65;
+      margin: 0 0 16px;
+      font-style: italic
+    }
+
+    .testi-who {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding-top: 14px;
+      border-top: 1px solid var(--line)
+    }
+
+    .testi-av {
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      background: var(--navy);
+      color: #fff;
+      display: grid;
+      place-items: center;
+      font-weight: 800;
+      font-size: .8rem;
+      flex: none
+    }
+
+    .testi-who strong {
+      display: block;
+      font-size: .86rem
+    }
+
+    .testi-who span {
+      color: var(--muted);
+      font-size: .78rem
+    }
+
+    /* CTA BAND */
+    .cta-band {
+      background: linear-gradient(135deg, var(--navy), var(--navy-l));
+      border-radius: var(--r);
+      padding: 40px;
+      text-align: center;
+      color: #fff;
+      position: relative;
+      overflow: hidden
+    }
+
+    .cta-band::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at 80% 30%, rgba(26, 143, 125, .15), transparent 40%);
+      pointer-events: none
+    }
+
+    .cta-band h3 {
+      font-size: clamp(1.4rem, 2.5vw, 1.9rem);
+      font-weight: 800;
+      margin-bottom: 10px;
+      position: relative
+    }
+
+    .cta-band p {
+      color: rgba(255, 255, 255, .7);
+      margin-bottom: 24px;
+      position: relative;
+      max-width: 500px;
+      margin-left: auto;
+      margin-right: auto
+    }
+
+    .cta-band .btn {
+      position: relative
+    }
+
+    /* FAQ */
+    .faq-list {
+      max-width: 720px
+    }
+
+    .faq-item {
+      border-bottom: 1px solid var(--line);
+      padding: 18px 0
+    }
+
+    .faq-q {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+      font-weight: 700;
+      font-size: .95rem;
+      gap: 16px;
+      background: none;
+      border: none;
+      width: 100%;
+      text-align: left;
+      color: var(--text);
+      padding: 0
+    }
+
+    .faq-q::after {
+      content: '+';
+      font-size: 1.2rem;
+      color: var(--muted);
+      flex: none;
+      transition: var(--t)
+    }
+
+    .faq-item.open .faq-q::after {
+      content: '−';
+      color: var(--teal)
+    }
+
+    .faq-a {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height .3s ease;
+      color: var(--muted);
+      font-size: .9rem;
+      line-height: 1.65
+    }
+
+    .faq-item.open .faq-a {
+      max-height: 300px;
+      padding-top: 10px
+    }
+
+    /* CONTACT */
+    .contact-g {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+      align-items: start
+    }
+
+    .c-panel {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: var(--r);
+      padding: 24px;
+      box-shadow: var(--shadow-md)
+    }
+
+    .c-item {
+      display: flex;
+      gap: 12px;
+      padding: 12px 0;
+      border-bottom: 1px dashed rgba(220, 226, 237, .7);
+      align-items: flex-start
+    }
+
+    .c-item:last-child {
+      border-bottom: none
+    }
+
+    .c-ico {
+      width: 36px;
+      height: 36px;
+      border-radius: 10px;
+      background: var(--teal-bg);
+      color: var(--teal);
+      display: grid;
+      place-items: center;
+      flex: none;
+      font-size: 1rem
+    }
+
+    .c-item strong {
+      display: block;
+      font-size: .88rem;
+      margin-bottom: 2px
+    }
+
+    .c-item span,
+    .c-item a {
+      color: var(--muted);
+      font-size: .86rem
+    }
+
+    .field {
+      display: grid;
+      gap: 6px;
+      margin-bottom: 12px
+    }
+
+    .field label {
+      font-weight: 700;
+      font-size: .85rem
+    }
+
+    .field input,
+    .field select,
+    .field textarea {
+      width: 100%;
+      padding: 12px 14px;
+      border: 1.5px solid var(--line);
+      border-radius: 12px;
+      background: #fcfdff;
+      outline: none;
+      transition: var(--t);
+      font-size: .9rem;
+      color: var(--text)
+    }
+
+    .field input:focus,
+    .field select:focus,
+    .field textarea:focus {
+      border-color: var(--teal);
+      box-shadow: 0 0 0 3px rgba(26, 143, 125, .08)
+    }
+
+    .field textarea {
+      min-height: 80px;
+      resize: vertical
+    }
+
+    .field-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px
+    }
+
+    /* FOOTER */
+    .footer {
+      background: var(--navy-d);
+      color: rgba(255, 255, 255, .65);
+      padding: 48px 0 0;
+      margin-top: 24px
+    }
+
+    .footer-g {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 32px;
+      padding-bottom: 32px;
+      border-bottom: 1px solid rgba(255, 255, 255, .08)
+    }
+
+    .footer h5 {
+      color: #fff;
+      font-size: .82rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      margin-bottom: 14px
+    }
+
+    .footer li {
+      margin-bottom: 8px
+    }
+
+    .footer li a {
+      font-size: .84rem;
+      transition: var(--t)
+    }
+
+    .footer li a:hover {
+      color: var(--teal-l)
+    }
+
+    .footer-b {
+      padding: 18px 0;
+      text-align: center;
+      font-size: .78rem;
+      color: rgba(255, 255, 255, .3)
+    }
+
+    .footer-brand p {
+      font-size: .84rem;
+      line-height: 1.65;
+      max-width: 260px;
+      margin-top: 8px
+    }
+
+    .footer-social {
+      display: flex;
+      gap: 8px;
+      margin-top: 14px
+    }
+
+    .footer-social a {
+      width: 32px;
+      height: 32px;
+      border-radius: 8px;
+      background: rgba(255, 255, 255, .07);
+      display: grid;
+      place-items: center;
+      color: rgba(255, 255, 255, .5);
+      font-size: .75rem;
+      font-weight: 700;
+      transition: var(--t)
+    }
+
+    .footer-social a:hover {
+      background: rgba(255, 255, 255, .14);
+      color: #fff
+    }
+
+    /* STICKY WA */
+    .swa {
+      position: fixed;
+      bottom: 18px;
+      right: 18px;
+      z-index: 80;
+      background: var(--green-wa);
+      color: #fff;
+      padding: 14px 20px;
+      border-radius: 60px;
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      font-weight: 800;
+      font-size: .88rem;
+      box-shadow: 0 14px 28px rgba(37, 211, 102, .25);
+      transition: var(--t);
+      cursor: pointer
+    }
+
+    .swa:hover {
+      transform: translateY(-3px) scale(1.03);
+      box-shadow: 0 18px 32px rgba(37, 211, 102, .3)
+    }
+
+    .swa svg {
+      width: 20px;
+      height: 20px;
+      fill: #fff
+    }
+
+    /* ANIMATE */
+    .an {
+      opacity: 0;
+      transform: translateY(18px);
+      transition: opacity .5s ease, transform .5s ease
+    }
+
+    .an.v {
+      opacity: 1;
+      transform: translateY(0)
+    }
+
+    /* RESPONSIVE */
+    @media(max-width:1024px) {
+
+      .nav-mid,
+      .nav-r {
+        display: none
+      }
+
+      .mob-btn {
+        display: inline-flex
+      }
+
+      .hero-g {
+        grid-template-columns: 1fr
+      }
+
+      .tracks-g,
+      .fac-g,
+      .branch-g,
+      .testi-g {
+        grid-template-columns: 1fr !important
+      }
+
+      .process-g {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 28px
+      }
+
+      .process-g::before {
+        display: none
+      }
+
+      .topper-g {
+        grid-template-columns: repeat(2, 1fr)
+      }
+
+      .stat-band-g {
+        grid-template-columns: repeat(3, 1fr)
+      }
+
+      .why-g,
+      .contact-g {
+        grid-template-columns: 1fr
+      }
+
+      .footer-g {
+        grid-template-columns: 1fr 1fr
+      }
+    }
+
+    @media(max-width:640px) {
+      .sec {
+        padding: 36px 0
+      }
+
+      .hero {
+        padding: 32px 0 20px
+      }
+
+      .hero h2 {
+        font-size: 1.85rem
+      }
+
+      .stat-band {
+        padding: 20px
+      }
+
+      .stat-band-g {
+        grid-template-columns: repeat(2, 1fr)
+      }
+
+      .hc-stats {
+        grid-template-columns: 1fr 1fr
+      }
+
+      .topper-g {
+        grid-template-columns: 1fr
+      }
+
+      .hero-btns {
+        flex-direction: column
+      }
+
+      .hero-btns .btn {
+        width: 100%
+      }
+
+      .field-row {
+        grid-template-columns: 1fr
+      }
+
+      .cta-band {
+        padding: 28px 20px
+      }
+
+      .footer-g {
+        grid-template-columns: 1fr
+      }
+
+      .swa span {
+        display: none
+      }
+
+      .swa {
+        padding: 16px;
+        border-radius: 50%
+      }
+
+      .process-g {
+        grid-template-columns: 1fr;
+        gap: 24px
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- NAV -->
+  <header class="topbar" id="topbar">
+    <div class="w">
+      <nav class="nav">
+        <a class="logo" href="#">
+          <div class="logo-mark">L</div>Litmus Academy
+        </a>
+        <div class="nav-mid"><a href="#tracks">Courses</a><a href="#why">Why Us</a><a href="#toppers">Results</a><a
+            href="#faculty">Faculty</a><a href="#branches">Branches</a><a href="#faq">FAQ</a><a
+            href="#contact">Contact</a></div>
+        <div class="nav-r"><a class="btn btn-o" href="tel:+919876543210" style="padding:10px 16px;font-size:.84rem">📞
+            Call Now</a><a class="btn btn-wa"
+            href="https://wa.me/919876543210?text=Hi%2C%20I%20want%20to%20enquire%20about%20Litmus%20Academy%20classes"
+            target="_blank" rel="noopener" style="padding:10px 16px;font-size:.84rem">💬 WhatsApp</a></div>
+        <button class="mob-btn" id="mobBtn">Menu</button>
+      </nav>
+      <div class="mob-menu" id="mobMenu"><a href="#tracks">Courses</a><a href="#why">Why Us</a><a
+          href="#toppers">Results</a><a href="#faculty">Faculty</a><a href="#branches">Branches</a><a
+          href="#faq">FAQ</a><a href="#contact">Contact</a></div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="w">
+      <div class="hero-g">
+        <div>
+          <div class="hero-badge"><span class="dot"></span> Admissions Open — New Batches Starting Soon</div>
+          <h2>Nashik's Trusted Academy for <em>Boards &amp; Competitive Exams</em></h2>
+          <p class="lead">From SSC &amp; CBSE boards to JEE &amp; NEET preparation — Litmus Academy has coached 5,000+
+            students across 3 branches with structured teaching, small batches, and a track record parents rely on.</p>
+          <div class="hero-btns">
+            <a class="btn btn-wa"
+              href="https://wa.me/919876543210?text=Hi%2C%20I%20want%20to%20book%20a%20free%20demo%20class%20at%20Litmus%20Academy"
+              target="_blank" rel="noopener">💬 Book Free Demo Class</a>
+            <a class="btn btn-p" href="#contact">📋 Enquire for Admission</a>
+            <a class="btn btn-o" href="tel:+919876543210">📞 Call Now</a>
+          </div>
+          <div class="hero-proof">
+            <div class="proof-item"><strong>3</strong> Branches in Nashik</div>
+            <div class="proof-item"><strong>5000+</strong> Students Coached</div>
+            <div class="proof-item"><strong>15+</strong> Years Experience</div>
+            <div class="proof-item"><strong>25–30</strong> Per Batch</div>
+          </div>
+        </div>
+        <aside class="hero-card an">
+          <div class="hc-inner">
+            <div class="hc-box">
+              <h4>Why parents choose Litmus</h4>
+              <p>Small batches. Weekly tests. Personal attention. No shortcuts — just structured teaching that shows in
+                results year after year.</p>
+            </div>
+            <div class="hc-stats">
+              <div class="hc-stat"><strong>SSC</strong><span>Class 8–10</span></div>
+              <div class="hc-stat"><strong>CBSE</strong><span>Class 8–12</span></div>
+              <div class="hc-stat"><strong>JEE</strong><span>11th–12th</span></div>
+            </div>
+            <div class="hc-stats">
+              <div class="hc-stat"><strong>ICSE</strong><span>Class 8–10</span></div>
+              <div class="hc-stat"><strong>NEET</strong><span>11th–12th</span></div>
+              <div class="hc-stat"><strong>Commerce</strong><span>11th–12th</span></div>
+            </div>
+            <div class="hc-box">
+              <h4>Quick Contact</h4>
+              <p><strong>Phone / WhatsApp:</strong> +91 98765 43210</p>
+              <p><strong>Branches:</strong> College Road • Gangapur Road • CIDCO</p>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- STAT BAND -->
+  <div class="w">
+    <div class="stat-band an">
+      <div class="stat-band-g">
+        <div class="sb-item"><strong>5000+</strong><span>Students Coached</span></div>
+        <div class="sb-item"><strong>15+</strong><span>Years in Nashik</span></div>
+        <div class="sb-item"><strong>3</strong><span>Branches</span></div>
+        <div class="sb-item"><strong>92%</strong><span>Score 75%+ in Boards</span></div>
+        <div class="sb-item"><strong>4.8★</strong><span>Google Rating</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TRACKS -->
+  <section class="sec" id="tracks">
+    <div class="w">
+      <div class="sec-head">
+        <div class="kicker">Exam Tracks</div>
+        <h3>Coaching programs built for each exam</h3>
+      </div>
+      <div class="tracks-g" style="grid-template-columns:repeat(2,1fr)">
+        <article class="track-card school an"><span class="track-tag">School Boards</span>
+          <h4>SSC / ICSE / CBSE Coaching</h4>
+          <p>Complete board preparation for classes 8 to 10 with chapter-wise tests, revision schedules, and personal
+            attention.</p>
+          <ul>
+            <li>SSC — Marathi &amp; Semi-English medium</li>
+            <li>ICSE — All subjects</li>
+            <li>CBSE — Science, Maths, English</li>
+            <li>Weekly tests + parent reports</li>
+            <li>Board exam strategy sessions</li>
+          </ul><a class="btn btn-o" href="#contact" style="width:100%">Enquire for Board Coaching</a>
+        </article>
+        <article class="track-card jee an"><span class="track-tag">Engineering</span>
+          <h4>JEE Foundation &amp; Mains</h4>
+          <p>Physics, Chemistry &amp; Maths coaching for JEE with concept-building, problem practice, and regular mock
+            tests.</p>
+          <ul>
+            <li>Foundation (Class 8–10)</li>
+            <li>JEE Mains (Class 11–12)</li>
+            <li>Integrated Board + JEE batches</li>
+            <li>Weekly mock tests &amp; analysis</li>
+            <li>Doubt sessions every Saturday</li>
+          </ul><a class="btn btn-o" href="#contact" style="width:100%">Enquire for JEE Coaching</a>
+        </article>
+        <article class="track-card neet an"><span class="track-tag">Medical</span>
+          <h4>NEET Coaching &amp; Biology</h4>
+          <p>Structured NEET preparation with focus on Biology, Physics &amp; Chemistry — built for board + entrance
+            dual prep.</p>
+          <ul>
+            <li>Foundation (Class 8–10)</li>
+            <li>NEET UG (Class 11–12)</li>
+            <li>Integrated Board + NEET batches</li>
+            <li>NCERT-based + advanced practice</li>
+            <li>Regular full-length mock tests</li>
+          </ul><a class="btn btn-o" href="#contact" style="width:100%">Enquire for NEET Coaching</a>
+        </article>
+        <article class="track-card commerce an"><span class="track-tag">Commerce</span>
+          <h4>Commerce &amp; CA Foundation</h4>
+          <p>Coaching for 11th–12th Commerce with strong focus on Accounts, Economics, and preparation for CA/CS
+            entrance.</p>
+          <ul>
+            <li>11th &amp; 12th Commerce</li>
+            <li>Accounts &amp; Book-keeping</li>
+            <li>Economics &amp; Business Studies</li>
+            <li>CA Foundation prep support</li>
+            <li>Board exam revision batches</li>
+          </ul><a class="btn btn-o" href="#contact" style="width:100%">Enquire for Commerce Coaching</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY LITMUS -->
+  <section class="sec" id="why">
+    <div class="w">
+      <h3 style="font-size:clamp(1.5rem,2.5vw,2rem);font-weight:800;letter-spacing:-.03em;margin-bottom:28px">What we
+        actually do differently</h3>
+      <div class="why-g">
+        <div class="why-card an">
+          <div class="why-icon">👥</div>
+          <div>
+            <h4>25–30 students per batch, not 60</h4>
+            <p>Every student gets called on, every doubt gets addressed. We don't run lecture halls.</p>
+          </div>
+        </div>
+        <div class="why-card an">
+          <div class="why-icon">📝</div>
+          <div>
+            <h4>Weekly tests with parent reports</h4>
+            <p>Every week, students are tested. Every month, parents receive a performance summary with specific areas
+              to improve.</p>
+          </div>
+        </div>
+        <div class="why-card an">
+          <div class="why-icon">📅</div>
+          <div>
+            <h4>Planned syllabus coverage</h4>
+            <p>No rushing before exams. The full syllabus is covered by January with 2 months left for revision and
+              practice.</p>
+          </div>
+        </div>
+        <div class="why-card an">
+          <div class="why-icon">💬</div>
+          <div>
+            <h4>Saturday doubt-solving sessions</h4>
+            <p>Free weekly sessions where students bring any question from the week. No new topics — just clearing
+              confusion.</p>
+          </div>
+        </div>
+        <div class="why-card an">
+          <div class="why-icon">📊</div>
+          <div>
+            <h4>Board + competitive dual track</h4>
+            <p>11th–12th students prepare for boards and JEE/NEET simultaneously. One admission, both goals covered.</p>
+          </div>
+        </div>
+        <div class="why-card an">
+          <div class="why-icon">📱</div>
+          <div>
+            <h4>Parent WhatsApp group updates</h4>
+            <p>Attendance notifications, test scores, and schedule changes — parents stay informed without having to
+              ask.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TOPPERS -->
+  <section class="sec" id="toppers"
+    style="background:rgba(12,31,63,.02);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:48px 0">
+    <div class="w">
+      <div class="sec-head">
+        <div class="kicker">Results — Batch of 2024</div>
+        <h3>Students who made us proud</h3>
+        <p>These scores are from our most recent batch. Add your own topper photos and marks once available.</p>
+      </div>
+      <div class="topper-g">
+        <article class="topper an">
+          <div class="topper-img"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M20 21a8 8 0 1 0-16 0" />
+              <circle cx="12" cy="8" r="4" />
+            </svg></div>
+          <div class="topper-body">
+            <h4>Aarav Deshmukh</h4>
+            <p class="stream">12th Science • JEE Mains 2024</p>
+            <div class="topper-tags"><span>96.4% Boards</span><span class="gold">98.2 %ile JEE</span></div>
+          </div>
+        </article>
+        <article class="topper an">
+          <div class="topper-img"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M20 21a8 8 0 1 0-16 0" />
+              <circle cx="12" cy="8" r="4" />
+            </svg></div>
+          <div class="topper-body">
+            <h4>Sneha Kulkarni</h4>
+            <p class="stream">12th Science • NEET 2024</p>
+            <div class="topper-tags"><span>94.8% Boards</span><span class="gold">640+ NEET</span></div>
+          </div>
+        </article>
+        <article class="topper an">
+          <div class="topper-img"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M20 21a8 8 0 1 0-16 0" />
+              <circle cx="12" cy="8" r="4" />
+            </svg></div>
+          <div class="topper-body">
+            <h4>Rahul Patil</h4>
+            <p class="stream">10th SSC • Board Topper 2024</p>
+            <div class="topper-tags"><span>97.2% SSC</span><span class="gold">School Rank 1</span></div>
+          </div>
+        </article>
+        <article class="topper an">
+          <div class="topper-img"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M20 21a8 8 0 1 0-16 0" />
+              <circle cx="12" cy="8" r="4" />
+            </svg></div>
+          <div class="topper-body">
+            <h4>Ananya Joshi</h4>
+            <p class="stream">10th CBSE • 2024</p>
+            <div class="topper-tags"><span>95.6% CBSE</span><span class="gold">City Topper</span></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- FACULTY -->
+  <section class="sec" id="faculty">
+    <div class="w">
+      <div
+        style="display:flex;justify-content:space-between;align-items:end;gap:18px;margin-bottom:28px;flex-wrap:wrap">
+        <div>
+          <div class="kicker">Faculty</div>
+          <h3 style="font-size:clamp(1.5rem,2.5vw,2rem);font-weight:800;letter-spacing:-.03em">Teachers students
+            actually remember</h3>
+        </div>
+        <p style="color:var(--muted);font-size:.9rem;max-width:360px;margin:0">We pick teachers for how well they
+          explain, not just what degrees they hold. Here's who's in the classroom.</p>
+      </div>
+      <div class="fac-g">
+        <div class="fac-card an">
+          <div class="fac-avatar">SP</div>
+          <h4>Prof. Sunil Pawar</h4>
+          <div class="subj">Physics • JEE &amp; NEET</div>
+          <p>Known for making Mechanics and Electrodynamics intuitive. Uses real-world analogies that students remember
+            during exams.</p>
+          <div class="exp">14+ years teaching</div>
+        </div>
+        <div class="fac-card an">
+          <div class="fac-avatar">AM</div>
+          <h4>Prof. Anjali Mehta</h4>
+          <div class="subj">Chemistry • Board &amp; JEE</div>
+          <p>Breaks down Organic Chemistry into logical patterns. Students consistently score 85%+ in her subject across
+            batches.</p>
+          <div class="exp">11+ years teaching</div>
+        </div>
+        <div class="fac-card an">
+          <div class="fac-avatar">RK</div>
+          <h4>Prof. Rajesh Kamble</h4>
+          <div class="subj">Mathematics • SSC &amp; CBSE</div>
+          <p>Patient, methodical, and relentless about fundamentals. Weak students see the biggest improvement in his
+            class.</p>
+          <div class="exp">16+ years teaching</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BRANCHES -->
+  <section class="sec" id="branches"
+    style="background:rgba(12,31,63,.02);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+    <div class="w">
+      <div class="sec-head">
+        <div class="kicker">Our Branches</div>
+        <h3>3 locations across Nashik</h3>
+        <p>Choose the branch closest to you. All branches follow the same syllabus, faculty standards, and test
+          schedule.</p>
+      </div>
+      <div class="branch-g">
+        <div class="branch an">
+          <h4>College Road</h4>
+          <p>2nd Floor, Sai Plaza, Near ABC Chowk, College Road, Nashik 422005</p><a class="btn btn-o"
+            href="tel:+919876543210" style="width:100%;font-size:.84rem">📞 Call This Branch</a>
+        </div>
+        <div class="branch an">
+          <h4>Gangapur Road</h4>
+          <p>3rd Floor, Shree Complex, Opp. City Hospital, Gangapur Road, Nashik 422013</p><a class="btn btn-o"
+            href="tel:+919876543211" style="width:100%;font-size:.84rem">📞 Call This Branch</a>
+        </div>
+        <div class="branch an">
+          <h4>CIDCO</h4>
+          <p>1st Floor, Sunrise Tower, Near CIDCO Bus Stop, Nashik 422009</p><a class="btn btn-o"
+            href="tel:+919876543212" style="width:100%;font-size:.84rem">📞 Call This Branch</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="sec" id="testimonials">
+    <div class="w">
+      <h3 style="font-size:clamp(1.5rem,2.5vw,2rem);font-weight:800;letter-spacing:-.03em;margin-bottom:28px">What
+        students and parents say about us</h3>
+      <div class="testi-g">
+        <div class="testi an">
+          <div class="stars">★★★★★</div>
+          <blockquote>"My son was scoring 55% in Maths before he joined. After one year with Rajesh sir, SSC board
+            result came — 89%. The weekly tests forced him to stay consistent. That discipline was missing at home, and
+            Litmus filled that gap completely."</blockquote>
+          <div class="testi-who">
+            <div class="testi-av">SM</div>
+            <div><strong>Sunita Mahajan</strong><span>Parent — 10th SSC batch</span></div>
+          </div>
+        </div>
+        <div class="testi an">
+          <div class="stars">★★★★★</div>
+          <blockquote>"Sunil sir doesn't just give formulas — he connects every problem to a concept. Physics went from
+            my weakest to my strongest. 95.8 percentile in JEE Mains."</blockquote>
+          <div class="testi-who">
+            <div class="testi-av">VD</div>
+            <div><strong>Varun Deshpande</strong><span>JEE Mains 2024</span></div>
+          </div>
+        </div>
+        <div class="testi an">
+          <div class="stars">★★★★★</div>
+          <blockquote>"They were honest — told me exactly where I was weak. Extra doubt sessions before NEET really
+            helped. 620+."</blockquote>
+          <div class="testi-who">
+            <div class="testi-av">PK</div>
+            <div><strong>Pooja Kale</strong><span>NEET 2024</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ADMISSIONS PROCESS -->
+  <section class="sec" id="process">
+    <div class="w">
+      <div style="text-align:center;margin-bottom:36px">
+        <div class="kicker" style="justify-content:center">How to Join</div>
+        <h3 style="font-size:clamp(1.5rem,2.5vw,2rem);font-weight:800;letter-spacing:-.03em">Getting started takes 4
+          simple steps</h3>
+      </div>
+      <div class="process-g an">
+        <div class="step">
+          <div class="step-num">1</div>
+          <h4>Enquire</h4>
+          <p>Call, WhatsApp, or fill the form. Tell us the class and stream.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <h4>Book a Demo</h4>
+          <p>Attend a free class at any branch. See the teaching style firsthand.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <h4>Choose Your Batch</h4>
+          <p>Pick the branch, timing, and track that suits your schedule.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">4</div>
+          <h4>Start Learning</h4>
+          <p>Complete admission. Get your study plan. Classes begin immediately.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BAND -->
+  <div class="w sec">
+    <div class="cta-band an">
+      <h3>Not sure which batch is right? Book a free demo class.</h3>
+      <p>Visit any branch, sit in a real class, and decide. No pressure, no commitment.</p>
+      <div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap">
+        <a class="btn btn-wa"
+          href="https://wa.me/919876543210?text=Hi%2C%20I%20want%20to%20book%20a%20free%20demo%20class" target="_blank"
+          rel="noopener">Book Demo on WhatsApp</a>
+        <a class="btn btn-o" href="tel:+919876543210"
+          style="background:rgba(255,255,255,.1);color:#fff;border-color:rgba(255,255,255,.2)">Call to Schedule</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- FAQ -->
+  <section class="sec" id="faq">
+    <div class="w">
+      <div
+        style="display:flex;justify-content:space-between;align-items:end;gap:18px;margin-bottom:28px;flex-wrap:wrap">
+        <h3 style="font-size:clamp(1.5rem,2.5vw,2rem);font-weight:800;letter-spacing:-.03em">Questions parents usually
+          ask</h3>
+        <p style="color:var(--muted);font-size:.88rem;margin:0">Can't find your answer? <a
+            href="https://wa.me/919876543210" style="color:var(--teal);font-weight:700">Ask us on WhatsApp →</a></p>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item"><button class="faq-q">How many students are there per batch?</button>
+          <div class="faq-a">We keep batches between 25–30 students. This ensures every student gets individual
+            attention and teachers can track progress personally.</div>
+        </div>
+        <div class="faq-item"><button class="faq-q">Do you offer a free demo class?</button>
+          <div class="faq-a">Yes. You can attend a full demo class at any branch for free. Just call us or send a
+            WhatsApp message to schedule one.</div>
+        </div>
+        <div class="faq-item"><button class="faq-q">Can my child prepare for both boards and JEE/NEET together?</button>
+          <div class="faq-a">Absolutely. Our 11th–12th integrated batches cover board syllabus and JEE/NEET preparation
+            simultaneously, so students don't need to join two separate classes.</div>
+        </div>
+        <div class="faq-item"><button class="faq-q">How can I enquire about fees?</button>
+          <div class="faq-a">Fees vary by course, class, and batch timing. Please call us or send a WhatsApp message and
+            we'll share the complete fee structure for your child's specific requirement.</div>
+        </div>
+        <div class="faq-item"><button class="faq-q">What boards do you cover?</button>
+          <div class="faq-a">We cover SSC (Maharashtra Board), ICSE, and CBSE for classes 8 to 10. For 11th–12th, we
+            offer Science and Commerce coaching with integrated competitive exam prep.</div>
+        </div>
+        <div class="faq-item"><button class="faq-q">What if my child misses a class?</button>
+          <div class="faq-a">We provide catch-up notes and allow students to attend the same topic in a parallel batch.
+            For long absences, we arrange separate sessions on request.</div>
+        </div>
+        <div class="faq-item"><button class="faq-q">How do I know which branch to choose?</button>
+          <div class="faq-a">All three branches follow the same syllabus, test schedule, and faculty standards. Simply
+            choose the one closest to your home or school for convenience.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="sec" id="contact">
+    <div class="w">
+      <div class="sec-head">
+        <div class="kicker">Admissions &amp; Enquiry</div>
+        <h3>Get in touch — we respond within hours</h3>
+        <p>Fill the form, send a WhatsApp, or just call. We'll help you find the right batch, branch, and schedule.</p>
+      </div>
+      <div class="contact-g">
+        <div class="c-panel an">
+          <h4 style="margin:0 0 14px;font-size:1.05rem">Contact Information</h4>
+          <div class="c-item">
+            <div class="c-ico">📞</div>
+            <div><strong>Phone</strong><a href="tel:+919876543210">+91 98765 43210</a></div>
+          </div>
+          <div class="c-item">
+            <div class="c-ico">💬</div>
+            <div><strong>WhatsApp</strong><a href="https://wa.me/919876543210" target="_blank" rel="noopener"
+                style="color:var(--green-wa);font-weight:600">Chat on WhatsApp →</a></div>
+          </div>
+          <div class="c-item">
+            <div class="c-ico">📧</div>
+            <div><strong>Email</strong><span>info@litmusacademy.in</span></div>
+          </div>
+          <div class="c-item">
+            <div class="c-ico">📍</div>
+            <div><strong>Head Office</strong><span>College Road Branch, Nashik</span></div>
+          </div>
+          <div class="c-item">
+            <div class="c-ico">⏰</div>
+            <div><strong>Timings</strong><span>Mon–Sat: 8:00 AM – 8:00 PM</span></div>
+          </div>
+          <div
+            style="margin-top:16px;padding:16px;border-radius:var(--r-sm);background:var(--teal-bg);border:1px solid rgba(26,143,125,.15);color:#0e6b5c;font-weight:600;font-size:.88rem">
+            💡 Pro tip: WhatsApp is the fastest way to reach us. Most parents get a response within 15 minutes.</div>
+        </div>
+        <div class="c-panel an">
+          <h4 style="margin:0 0 6px;font-size:1.05rem">Enquire for Admission</h4>
+          <p style="color:var(--muted);font-size:.88rem;margin:0 0 18px">Fill this form and we'll call you back to
+            discuss the right batch and schedule.</p>
+          <form id="eForm">
+            <div class="field-row">
+              <div class="field"><label>Student Name *</label><input id="fn" required placeholder="Enter name" /></div>
+              <div class="field"><label>Phone *</label><input id="ph" type="tel" required placeholder="Mobile number" />
+              </div>
+            </div>
+            <div class="field-row">
+              <div class="field"><label>Class *</label><select id="cls" required>
+                  <option value="">Select</option>
+                  <option>8th</option>
+                  <option>9th</option>
+                  <option>10th</option>
+                  <option>11th</option>
+                  <option>12th</option>
+                </select></div>
+              <div class="field"><label>Track</label><select id="trk">
+                  <option value="">Select</option>
+                  <option>SSC</option>
+                  <option>ICSE</option>
+                  <option>CBSE</option>
+                  <option>JEE</option>
+                  <option>NEET</option>
+                  <option>Commerce</option>
+                </select></div>
+            </div>
+            <div class="field"><label>Preferred Branch</label><select id="br">
+                <option value="">Select</option>
+                <option>College Road</option>
+                <option>Gangapur Road</option>
+                <option>CIDCO</option>
+              </select></div>
+            <div class="field"><label>Message</label><textarea id="msg"
+                placeholder="Any questions about batches, fees, or schedule?"></textarea></div>
+            <button class="btn btn-p" type="submit" style="width:100%">Submit Enquiry</button>
+            <div id="suc"
+              style="display:none;margin-top:12px;padding:14px;border-radius:12px;background:var(--teal-bg);border:1px solid rgba(26,143,125,.15);color:#0e6b5c;font-weight:700;text-align:center">
+              ✅ Enquiry submitted! We'll call you within a few hours.</div>
+          </form>
+          <p style="margin-top:10px;font-size:.8rem;color:var(--muted)">Your details are only used to contact you about
+            admissions. No spam.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="w">
+      <div class="footer-g">
+        <div class="footer-brand"><strong style="color:#fff;font-size:1.05rem">Litmus Academy</strong>
+          <p>Nashik's trusted coaching institute for SSC, ICSE, CBSE, JEE &amp; NEET. 3 branches. 5000+ students. 15+
+            years.</p>
+          <div class="footer-social"><a href="#">f</a><a href="#">ig</a><a href="#">yt</a></div>
+        </div>
+        <div>
+          <h5>Courses</h5>
+          <ul>
+            <li><a href="#tracks">SSC Coaching</a></li>
+            <li><a href="#tracks">ICSE Coaching</a></li>
+            <li><a href="#tracks">CBSE Coaching</a></li>
+            <li><a href="#tracks">JEE Preparation</a></li>
+            <li><a href="#tracks">NEET Preparation</a></li>
+            <li><a href="#tracks">Commerce Coaching</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Quick Links</h5>
+          <ul>
+            <li><a href="#why">Why Litmus</a></li>
+            <li><a href="#toppers">Results</a></li>
+            <li><a href="#faculty">Faculty</a></li>
+            <li><a href="#branches">Branches</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Contact</h5>
+          <ul>
+            <li><a href="tel:+919876543210">+91 98765 43210</a></li>
+            <li><a href="mailto:info@litmusacademy.in">info@litmusacademy.in</a></li>
+            <li><a href="#contact">Enquire Now</a></li>
+            <li><a href="#contact">Book Demo Class</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-b">© 2025 Litmus Academy, Nashik. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <!-- STICKY WA -->
+  <a class="swa" href="https://wa.me/919876543210?text=Hi%2C%20I%20want%20to%20enquire%20about%20Litmus%20Academy"
+    target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24">
+      <path
+        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
+      <path
+        d="M12 0C5.373 0 0 5.373 0 12c0 2.127.555 4.126 1.527 5.86L.06 23.487a.5.5 0 00.613.613l5.627-1.467A11.935 11.935 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.94 0-3.76-.562-5.296-1.53l-.38-.226-3.332.869.87-3.332-.226-.38A9.935 9.935 0 012 12C2 6.486 6.486 2 12 2s10 4.486 10 10-4.486 10-10 10z" />
+    </svg>
+    <span>WhatsApp Enquiry</span></a>
+
+  <script>
+    const tb = document.getElementById('topbar'); window.addEventListener('scroll', () => tb.classList.toggle('scrolled', scrollY > 40));
+    const mb = document.getElementById('mobBtn'), mm = document.getElementById('mobMenu');
+    mb.addEventListener('click', () => { const o = mm.classList.toggle('on'); mb.textContent = o ? 'Close' : 'Menu' });
+    mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.remove('on'); mb.textContent = 'Menu' }));
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('v');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px' });
+    document.querySelectorAll('.an').forEach(el => observer.observe(el));
+    document.querySelectorAll('.faq-q').forEach(q => q.addEventListener('click', () => q.parentElement.classList.toggle('open')));
+    document.getElementById('eForm').addEventListener('submit', e => {
+      e.preventDefault();
+      const name = document.getElementById('fn').value.trim();
+      const phone = document.getElementById('ph').value.trim();
+      const cls = document.getElementById('cls').value;
+      const trk = document.getElementById('trk').value;
+      const br = document.getElementById('br').value;
+      const msg = document.getElementById('msg').value.trim();
+      const text = [
+        'Hi, I want to enquire about admission at Litmus Academy.',
+        'Name: ' + name,
+        'Phone: ' + phone,
+        cls ? 'Class: ' + cls : null,
+        trk ? 'Track: ' + trk : null,
+        br ? 'Branch: ' + br : null,
+        msg ? 'Message: ' + msg : null
+      ].filter(Boolean).join('%0A');
+      document.getElementById('suc').style.display = 'block';
+      window.open('https://wa.me/919876543210?text=' + text, '_blank', 'noopener');
+    });
+    document.querySelectorAll('a[href^="#"]').forEach(a => a.addEventListener('click', function (e) { const t = document.querySelector(this.getAttribute('href')); if (t) { e.preventDefault(); window.scrollTo({ top: t.offsetTop - 70, behavior: 'smooth' }) } }));
+  </script>
+</body>
+
+</html>
